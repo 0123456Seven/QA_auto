@@ -1,15 +1,15 @@
-package hh;
+package core;
 
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 
-abstract public class BaseTest{
+abstract public class BaseTest {
 
-    /**
-     * инициализация selenide с настройками
-     */
+//    /**
+//     * инициализация selenide с настройками
+//     */
     public void setUp(){
 
         Configuration.browser = "firefox";
@@ -18,17 +18,17 @@ abstract public class BaseTest{
         Configuration.timeout = 200000;
     }
 
-    /**
-     * выполнение метода перед каждым запуском тестов
-     */
+//    /**
+//     * выполнение метода перед каждым запуском тестов
+//     */
     @BeforeEach
     public void init(){
         setUp();
     }
 
-    /**
-     * выполнение метода после каждого закрытия тестов
-     */
+//    /**
+//     * выполнение метода после каждого закрытия тестов
+//     */
     @AfterEach
     public void tearDown(){
         Selenide.closeWebDriver();

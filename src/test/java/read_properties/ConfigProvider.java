@@ -11,8 +11,7 @@ public interface ConfigProvider{
                 : ConfigFactory.load("application.conf");
 
     }
-    String url = config.getString("url");
-    Integer age = config.getInt("age");
-    String login = config.getString("userParams.admin.login");
-    String demoPassword = config.getString("userParams.admin.password");
+    String URL = config.getString("url");
+    String USER_LOGIN = config.getString("usersParams.admin.login");
+    String USER_PASSWORD = config.getString("usersParams.admin.password");
 }
